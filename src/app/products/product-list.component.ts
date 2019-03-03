@@ -57,5 +57,12 @@ export class ProductListComponent {
           "starRating": 4.6,
           "imageUrl": "https://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
         }
-      ];
+    ];
+    productWidth: string = '50';
+    productHeight: string = '50';
+    listFilter: string = 'cart';
+    showImage: boolean = false;
+    toggleImage(): void {
+        this.showImage = !this.showImage;
+    }
 }
